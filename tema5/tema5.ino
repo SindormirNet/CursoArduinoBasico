@@ -8,9 +8,9 @@ void setup() {
 
 void loop() {
 
-  while(digitalRead(PULSADOR) == LOW);
+  while(digitalRead(PULSADOR) == LOW) { }
 
-  while(1) {
+  while(1 == 1) {
     digitalWrite(LED, HIGH);
     delay(100);
     digitalWrite(LED, LOW);
