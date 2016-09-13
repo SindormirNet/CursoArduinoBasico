@@ -8,9 +8,10 @@
 #define SEG_DP 9
 
 void setup() {
-  for (int i=10; i<14; i++)
+  int i;
+  for (i=10; i<=13; i++)
     pinMode(i, INPUT);
-  for (int i=2; i<9; i++)
+  for (i=2; i<=8; i++)
     pinMode(i, OUTPUT);    
 }
 
@@ -22,8 +23,9 @@ void loop() {
 
 int cuenta_botones(){
   int contador = 0;
+  int i;
   
-  for (int i=10; i<14; i++)
+  for (i=10; i<=13; i++)
     if (digitalRead(i)==HIGH) contador++;
   return contador;
 }
