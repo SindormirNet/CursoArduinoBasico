@@ -7,8 +7,10 @@
 #define SEG_G 8
 #define SEG_DP 9
 
+int pin;
+
 void init_7_segmentos(){
-  for (byte pin=2; pin<10; pin++)   
+  for (pin=2; pin<=9; pin++)   
     pinMode(pin,OUTPUT);
 }
 
