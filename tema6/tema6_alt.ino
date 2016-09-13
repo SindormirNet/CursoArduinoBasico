@@ -1,5 +1,6 @@
 void setup(){
-  for (byte pin=10; pin<=13; pin++) 
+  int pin;
+  for (pin=10; pin<=13; pin++) 
     pinMode(pin,INPUT);
   init_7_segmentos();
 }
@@ -12,8 +13,9 @@ void loop() {
 
 int cuenta_botones(){
   int contador = 0;
+  int i;
 
-  for (int i=10; i<14; i++)
+  for (i=10; i<14; i++)
     if (digitalRead(i)==HIGH) contador++;
   return contador;
 }
