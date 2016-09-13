@@ -8,7 +8,7 @@ void setup() {
 
 void loop() {
 
-  do {  //Parpadea mientras el pulsador esté activado
+  do {
     digitalWrite(LED, HIGH);
     delay(100);
     digitalWrite(LED, LOW);
