@@ -10,8 +10,9 @@
 int pin;
 
 void init_7_segmentos(){
-  for (pin=2; pin<=9; pin++)   
+  for (pin=2; pin<=9; pin++) {
     pinMode(pin,OUTPUT);
+  }
 }
 
 void imprime_7_segmentos(int num) {
