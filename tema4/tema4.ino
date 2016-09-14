@@ -1,12 +1,13 @@
-byte pin;
+int pin;
 
 void setup() {
-  for (pin = 2; pin < 6; pin++)
-	  pinMode(pin, OUTPUT);     
+  for (pin = 2; pin <= 5; pin++){
+    pinMode(pin, OUTPUT);     
+  }
 }
   
 void loop() {
-  for (pin = 2; pin < 6; pin++) { 
+  for (pin = 2; pin <= 5; pin++) { 
     digitalWrite(pin, HIGH);   
     delay(100);                  
     digitalWrite(pin, LOW);    
