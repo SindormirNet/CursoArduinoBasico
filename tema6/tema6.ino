@@ -9,10 +9,12 @@
 
 void setup() {
   int i;
-  for (i=10; i<=13; i++)
+  for (i=10; i<=13; i++){
     pinMode(i, INPUT);
-  for (i=2; i<=8; i++)
-    pinMode(i, OUTPUT);    
+  }
+  for (i=2; i<=8; i++){
+    pinMode(i, OUTPUT);
+  }
 }
 
 void loop() {
@@ -25,8 +27,9 @@ int cuenta_botones(){
   int contador = 0;
   int i;
   
-  for (i=10; i<=13; i++)
+  for (i=10; i<=13; i++){
     if (digitalRead(i)==HIGH) contador++;
+  }
   return contador;
 }
 
